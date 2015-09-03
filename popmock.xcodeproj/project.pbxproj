@@ -13,6 +13,11 @@
 		8057B9241B98105900AB95CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8057B9231B98105900AB95CC /* Images.xcassets */; };
 		8057B9271B98105900AB95CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8057B9251B98105900AB95CC /* LaunchScreen.xib */; };
 		8057B9331B98105A00AB95CC /* popmockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8057B9321B98105A00AB95CC /* popmockTests.swift */; };
+		8057B93D1B98125000AB95CC /* FileExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8057B93C1B98125000AB95CC /* FileExtension.swift */; };
+		8057B9471B98138F00AB95CC /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8057B9461B98138F00AB95CC /* ShareViewController.swift */; };
+		8057B9491B98138F00AB95CC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8057B9481B98138F00AB95CC /* MainInterface.storyboard */; };
+		8057B94C1B98138F00AB95CC /* popmock-share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8057B9421B98138F00AB95CC /* popmock-share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8057B9541B98189C00AB95CC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8057B9531B98189C00AB95CC /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +28,28 @@
 			remoteGlobalIDString = 8057B9161B98105900AB95CC;
 			remoteInfo = popmock;
 		};
+		8057B94A1B98138F00AB95CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8057B90F1B98105900AB95CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8057B9411B98138F00AB95CC;
+			remoteInfo = "popmock-share";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8057B9501B98138F00AB95CC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8057B94C1B98138F00AB95CC /* popmock-share.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8057B9171B98105900AB95CC /* popmock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popmock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +62,14 @@
 		8057B92C1B98105A00AB95CC /* popmockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = popmockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8057B9311B98105A00AB95CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8057B9321B98105A00AB95CC /* popmockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popmockTests.swift; sourceTree = "<group>"; };
+		8057B93C1B98125000AB95CC /* FileExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileExtension.swift; sourceTree = "<group>"; };
+		8057B9421B98138F00AB95CC /* popmock-share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "popmock-share.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8057B9451B98138F00AB95CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8057B9461B98138F00AB95CC /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		8057B9481B98138F00AB95CC /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		8057B9511B9813F900AB95CC /* popmock-share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "popmock-share.entitlements"; sourceTree = "<group>"; };
+		8057B9521B98147500AB95CC /* popmock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = popmock.entitlements; sourceTree = "<group>"; };
+		8057B9531B98189C00AB95CC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +87,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8057B93F1B98138F00AB95CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8057B9541B98189C00AB95CC /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		8057B90E1B98105900AB95CC = {
 			isa = PBXGroup;
 			children = (
+				8057B9531B98189C00AB95CC /* MobileCoreServices.framework */,
 				8057B9191B98105900AB95CC /* popmock */,
 				8057B92F1B98105A00AB95CC /* popmockTests */,
+				8057B9431B98138F00AB95CC /* popmock-share */,
 				8057B9181B98105900AB95CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +114,7 @@
 			children = (
 				8057B9171B98105900AB95CC /* popmock.app */,
 				8057B92C1B98105A00AB95CC /* popmockTests.xctest */,
+				8057B9421B98138F00AB95CC /* popmock-share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,9 +122,11 @@
 		8057B9191B98105900AB95CC /* popmock */ = {
 			isa = PBXGroup;
 			children = (
+				8057B9521B98147500AB95CC /* popmock.entitlements */,
 				8057B91C1B98105900AB95CC /* AppDelegate.swift */,
 				8057B91E1B98105900AB95CC /* ViewController.swift */,
 				8057B9201B98105900AB95CC /* Main.storyboard */,
+				8057B93C1B98125000AB95CC /* FileExtension.swift */,
 				8057B9231B98105900AB95CC /* Images.xcassets */,
 				8057B9251B98105900AB95CC /* LaunchScreen.xib */,
 				8057B91A1B98105900AB95CC /* Supporting Files */,
@@ -112,6 +159,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8057B9431B98138F00AB95CC /* popmock-share */ = {
+			isa = PBXGroup;
+			children = (
+				8057B9511B9813F900AB95CC /* popmock-share.entitlements */,
+				8057B9461B98138F00AB95CC /* ShareViewController.swift */,
+				8057B9481B98138F00AB95CC /* MainInterface.storyboard */,
+				8057B9441B98138F00AB95CC /* Supporting Files */,
+			);
+			path = "popmock-share";
+			sourceTree = "<group>";
+		};
+		8057B9441B98138F00AB95CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8057B9451B98138F00AB95CC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +188,12 @@
 				8057B9131B98105900AB95CC /* Sources */,
 				8057B9141B98105900AB95CC /* Frameworks */,
 				8057B9151B98105900AB95CC /* Resources */,
+				8057B9501B98138F00AB95CC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8057B94B1B98138F00AB95CC /* PBXTargetDependency */,
 			);
 			name = popmock;
 			productName = popmock;
@@ -150,6 +218,23 @@
 			productReference = 8057B92C1B98105A00AB95CC /* popmockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		8057B9411B98138F00AB95CC /* popmock-share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8057B94D1B98138F00AB95CC /* Build configuration list for PBXNativeTarget "popmock-share" */;
+			buildPhases = (
+				8057B93E1B98138F00AB95CC /* Sources */,
+				8057B93F1B98138F00AB95CC /* Frameworks */,
+				8057B9401B98138F00AB95CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "popmock-share";
+			productName = "popmock-share";
+			productReference = 8057B9421B98138F00AB95CC /* popmock-share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +246,25 @@
 				TargetAttributes = {
 					8057B9161B98105900AB95CC = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = B89DDD6AUG;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8057B92B1B98105A00AB95CC = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 8057B9161B98105900AB95CC;
+					};
+					8057B9411B98138F00AB95CC = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = B89DDD6AUG;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -183,6 +283,7 @@
 			targets = (
 				8057B9161B98105900AB95CC /* popmock */,
 				8057B92B1B98105A00AB95CC /* popmockTests */,
+				8057B9411B98138F00AB95CC /* popmock-share */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +306,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8057B9401B98138F00AB95CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8057B9491B98138F00AB95CC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8057B93D1B98125000AB95CC /* FileExtension.swift in Sources */,
 				8057B91F1B98105900AB95CC /* ViewController.swift in Sources */,
 				8057B91D1B98105900AB95CC /* AppDelegate.swift in Sources */,
 			);
@@ -225,6 +335,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8057B93E1B98138F00AB95CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8057B9471B98138F00AB95CC /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +350,11 @@
 			isa = PBXTargetDependency;
 			target = 8057B9161B98105900AB95CC /* popmock */;
 			targetProxy = 8057B92D1B98105A00AB95CC /* PBXContainerItemProxy */;
+		};
+		8057B94B1B98138F00AB95CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8057B9411B98138F00AB95CC /* popmock-share */;
+			targetProxy = 8057B94A1B98138F00AB95CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -340,9 +463,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = popmock/popmock.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = popmock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -350,9 +477,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = popmock/popmock.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = popmock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -390,6 +521,38 @@
 			};
 			name = Release;
 		};
+		8057B94E1B98138F00AB95CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "popmock-share/popmock-share.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "popmock-share/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8057B94F1B98138F00AB95CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "popmock-share/popmock-share.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "popmock-share/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +578,14 @@
 			buildConfigurations = (
 				8057B93A1B98105A00AB95CC /* Debug */,
 				8057B93B1B98105A00AB95CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8057B94D1B98138F00AB95CC /* Build configuration list for PBXNativeTarget "popmock-share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8057B94E1B98138F00AB95CC /* Debug */,
+				8057B94F1B98138F00AB95CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>popmock-share.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>popmock.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>8057B92B1B98105A00AB95CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8057B9411B98138F00AB95CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
