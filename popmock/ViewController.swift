@@ -36,6 +36,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.collectionView.registerClass(ImageCollectionViewCell.self, forCellWithReuseIdentifier: "ImageCell")
+        self.collectionView.backgroundColor = UIColor.clearColor()
+    }
+    
+    func loadItems() {
         if let docUrl = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier("group.in.popapp") {
             if let dirContents = NSFileManager.defaultManager().contentsOfDirectoryAtURL(docUrl, includingPropertiesForKeys: nil, options: NSDirectoryEnumerationOptions.SkipsHiddenFiles | NSDirectoryEnumerationOptions.SkipsPackageDescendants, error: nil) {
                 
@@ -47,12 +52,18 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                     return false
                 })
                 
+                
+                self.collectionView.reloadData()
             }
         }
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
-        self.collectionView.registerClass(ImageCollectionViewCell.self, forCellWithReuseIdentifier: "ImageCell")
-        self.collectionView.backgroundColor = UIColor.clearColor()
+        self.loadItems()
+
     }
 
     override func didReceiveMemoryWarning() {

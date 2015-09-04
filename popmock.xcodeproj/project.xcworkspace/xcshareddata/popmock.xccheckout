@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>30FB11C9-4ADA-4B9F-B8E9-4067B88725D6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>popmock</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EB6382BD18C3F2E15E9DFB92B0F4DCE89E3F009F</key>
+		<string>github.com:syshen/ShareExtensionSample.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>popmock.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EB6382BD18C3F2E15E9DFB92B0F4DCE89E3F009F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:syshen/ShareExtensionSample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EB6382BD18C3F2E15E9DFB92B0F4DCE89E3F009F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EB6382BD18C3F2E15E9DFB92B0F4DCE89E3F009F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>popmock</string>
+		</dict>
+	</array>
+</dict>
+</plist>
