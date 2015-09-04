@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		803DDACF1B9991CC00DCDC7D /* CustomSharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803DDACE1B9991CC00DCDC7D /* CustomSharingViewController.swift */; };
 		8057B91D1B98105900AB95CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8057B91C1B98105900AB95CC /* AppDelegate.swift */; };
 		8057B91F1B98105900AB95CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8057B91E1B98105900AB95CC /* ViewController.swift */; };
 		8057B9221B98105900AB95CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8057B9201B98105900AB95CC /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		803DDACE1B9991CC00DCDC7D /* CustomSharingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSharingViewController.swift; sourceTree = "<group>"; };
 		8057B9171B98105900AB95CC /* popmock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = popmock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8057B91B1B98105900AB95CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8057B91C1B98105900AB95CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				8057B9511B9813F900AB95CC /* popmock-share.entitlements */,
 				8057B9461B98138F00AB95CC /* ShareViewController.swift */,
+				803DDACE1B9991CC00DCDC7D /* CustomSharingViewController.swift */,
 				8057B9481B98138F00AB95CC /* MainInterface.storyboard */,
 				8057B9441B98138F00AB95CC /* Supporting Files */,
 			);
@@ -339,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				803DDACF1B9991CC00DCDC7D /* CustomSharingViewController.swift in Sources */,
 				8057B9471B98138F00AB95CC /* ShareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,6 +576,7 @@
 				8057B9381B98105A00AB95CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8057B9391B98105A00AB95CC /* Build configuration list for PBXNativeTarget "popmockTests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +585,7 @@
 				8057B93B1B98105A00AB95CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8057B94D1B98138F00AB95CC /* Build configuration list for PBXNativeTarget "popmock-share" */ = {
 			isa = XCConfigurationList;
@@ -588,6 +594,7 @@
 				8057B94F1B98138F00AB95CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
